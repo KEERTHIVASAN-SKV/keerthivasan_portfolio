@@ -1,364 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keerthivasan S - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090f" />
+  <meta name="description" content="Keerthivasan S — Software Engineer, full-stack developer and AI enthusiast. Explore selected projects, experience and technical skills." />
+  <meta property="og:title" content="Keerthivasan S — Software Engineer" />
+  <meta property="og:description" content="Building thoughtful digital experiences and practical software solutions." />
+  <meta property="og:type" content="website" />
+  <title>Keerthivasan S | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="module" src="/script.js"></script>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">Keerthivasan S</div>
-            <div class="nav-links">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#certificates" class="nav-link">Certificates</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="menu-btn">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Keerthivasan home"><span class="brand-mark">K<span>.</span></span><span>KEERTHIVASAN</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Stack</a><a href="#experience">Experience</a><a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
+      </div>
     </nav>
+  </header>
 
-    <!-- Header Section -->
-    <header class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="glitch" data-text="Keerthivasan S">Keerthivasan S</h1>
-                    <p class="subtitle">Information Technology Student</p>
-
-                    <!-- Action Buttons -->
-                    <div class="action-buttons">
-                        <a href="/RESUME.pdf" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
-                        <a href="mailto:keerthivasan.skv1506@gmail.com" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Send Email
-                        </a>
-                    </div>
-
-                    <div class="contact-icons">
-                        <a href="mailto:keerthivasan.skv1506@gmail.com" class="animate-icon"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:7810003524" class="animate-icon"><i class="fas fa-phone"></i></a>
-                        <a href="https://www.linkedin.com/in/keerthivasan-sk" target="_blank" class="animate-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/KEERTHIVASAN-SKV" target="_blank" class="animate-icon"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-
-                <!-- ? Profile Photo 
-                <div class="profile-photo">
-                    <img src="public/profile.jpg" alt="Keerthivasan S" />
-                </div>
-            -->
-            </div>
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR SOFTWARE ENGINEERING OPPORTUNITIES</div>
+        <p class="hero-kicker">HELLO, I'M</p>
+        <h1>Keerthivasan<span class="name-period">.</span><br /><span class="outline-text">I build for the</span><br /><span class="gradient-text">real world.</span></h1>
+        <p class="hero-summary">Software engineer in the making, interested in full-stack development, thoughtful interfaces and applied AI. I enjoy turning ideas into useful, well-crafted products.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+          <a class="button button-quiet" href="/RESUME.pdf" target="_blank" rel="noreferrer">View résumé <span>↗</span></a>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="about reveal-section" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am Keerthivasan S, an Information Technology undergraduate passionate about web development, UI/UX design, and software engineering. I enjoy creating clean, responsive, and user-friendly web applications using HTML, CSS, JavaScript, PHP, and MySQL,
-                        while exploring databases and full-stack development. I focus on blending technical efficiency with user experience, and I’m driven by continuous learning, problem-solving, and creativity. My goal is to grow into a versatile full-stack
-                        developer capable of building impactful and scalable solutions.
-                    </p>
-                </div>
-            </div>
+        <div class="hero-socials">
+          <a href="https://github.com/KEERTHIVASAN-SKV" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/keerthivasan-sk" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="mailto:keerthivasan.skv1506@gmail.com">Email ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract interactive 3D orbital sculpture">
+        <div class="visual-label visual-label-top"><span>FIG. 01</span><span>CREATIVE ENGINEERING</span></div>
+        <div class="orbital-fallback" aria-hidden="true"><div class="orbital-core"></div><i></i><b></b></div>
+        <canvas id="hero3d" aria-hidden="true"></canvas>
+        <div class="visual-caption"><span class="caption-line"></span><span>Curiosity in motion</span><span class="mono">13° 04' N / 80° 16' E</span></div>
+        <div class="visual-index">01 <span>/</span> 04</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      <div class="hero-side-note">DESIGN · DEVELOPMENT · EXPERIMENTATION</div>
     </section>
 
-    <!-- Education Section -->
-    <section class="education reveal-section" id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item reveal-item">
-                    <div class="timeline-content">
-                        <h3>B.Tech Information Technology</h3>
-                        <p>Loyola ICAM College of Engineering and Technology, Chennai</p>
-                        <span class="date">2023 - 2027</span>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-item">
-                    <div class="timeline-content left">
-                        <h3>12th Standard</h3>
-                        <p>St.Joseph's Higher Secondary School, Chengalpattu</p>
-                        <span class="percentage">87%</span>
-                        <span class="date">2022 - 2023</span>
-                    </div>
-                </div>
-            </div>
+    <section class="intro-section section shell reveal" id="about">
+      <div class="section-top"><span class="section-index">01 / ABOUT</span><span class="section-rule"></span><span class="section-note">A LITTLE CONTEXT</span></div>
+      <div class="intro-grid">
+        <h2>Curious by nature.<br /><span class="muted">Driven to build.</span></h2>
+        <div class="intro-copy">
+          <p>I'm an Information Technology undergraduate at Loyola ICAM College of Engineering and Technology, Chennai. I enjoy building web applications, exploring software architecture and experimenting with AI-powered tools.</p>
+          <p>My approach is practical: understand the problem, choose the right tools, and build an experience that is clear, reliable and useful. I'm currently sharpening my engineering fundamentals while exploring full-stack and AI development.</p>
+          <div class="about-facts"><div><span class="fact-value">2023—27</span><span class="fact-label">B.Tech · Information Technology</span></div><div><span class="fact-value">Chennai</span><span class="fact-label">Loyola ICAM · LICET</span></div></div>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects reveal-section" id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-grid">
-                <div class="project-card reveal-item">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Smart Traffic Signal" />
-                    </div>
-                    <div class="project-content">
-                        <h3>Smart Traffic Signal</h3>
-                        <p>Designed a traffic signal system using sensors to detect vehicle presence and manage signal timing dynamically. Reduced wait time by switching green lights to busy lanes during peak hours.</p>
-                    </div>
-                </div>
-
-                <div class="project-card reveal-item">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Captcha Generator" />
-                    </div>
-                    <div class="project-content">
-                        <h3>Captcha Generator</h3>
-                        <p>Built a CAPTCHA generator in JavaFX using custom packages to enhance form security. Generated random alphanumeric codes with visual distortion to prevent bot submissions.</p>
-                    </div>
-                </div>
-
-                <div class="project-card reveal-item">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Pharmacy Database Management" />
-                    </div>
-                    <div class="project-content">
-                        <h3>Pharmacy Database Management System</h3>
-                        <p>Developed a web-based pharmacy management system using SQL, PHP, and HTML to handle tablet inventory and online orders. Stored user order details and tablet information in structured database tables for efficient tracking and management.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/KEERTHIVASAN-SKV/pharmacy-database-management-system" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="work-section section shell reveal" id="work">
+      <div class="section-top"><span class="section-index">02 / SELECTED WORK</span><span class="section-rule"></span><span class="section-note">IDEAS INTO SOFTWARE</span></div>
+      <div class="section-heading-row"><h2>Projects that<br /><span class="muted">keep me curious.</span></h2><p>A selection of projects across product development, AI integration and software systems.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-art art-sportizen"><div class="art-orbit"></div><div class="art-ball">S</div><span class="art-tag">01 — SOCIAL SPORTS PLATFORM</span><span class="art-side">CONNECT / PLAY / GROW</span></div>
+          <div class="project-info"><div class="project-meta"><span>FULL-STACK PRODUCT</span><span>01 / 03</span></div><h3>SportiZen</h3><p>A sports networking platform where players, coaches and organizations can create role-based profiles, connect and discover opportunities through dedicated dashboards.</p><div class="tag-list"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Role-based UI</span></div><div class="project-foot"><span>Product concept & application development</span><span class="project-arrow">↗</span></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-quiz"><div class="quiz-window"><div class="quiz-top"><i></i><i></i><i></i><span>QUIZGEN / AI</span></div><div class="quiz-lines"><b></b><b></b><b></b></div><div class="quiz-choice"><i></i><i></i><i></i></div><div class="quiz-spark">✳</div></div><span class="art-tag">02 — GENERATIVE AI</span></div>
+          <div class="project-info"><div class="project-meta"><span>AI-POWERED APPLICATION</span><span>02 / 03</span></div><h3>QuizGen AI</h3><p>An AI-assisted quiz generation application that integrates an LLM API to turn supplied content into quiz questions and support a more engaging learning workflow.</p><div class="tag-list"><span>LLM API</span><span>Frontend</span><span>AI Integration</span></div><div class="project-foot"><span>LLM API integration</span><span class="project-arrow">↗</span></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-diplomat"><div class="code-panel"><span>CONTRACT</span><b>claim.validate()</b><em>✓ schema verified</em><em>✓ policy constraints</em><i>→ agent response</i></div><span class="art-tag">03 — SYSTEMS / AI</span></div>
+          <div class="project-info"><div class="project-meta"><span>EXPERIMENTAL SYSTEM</span><span>03 / 03</span></div><h3>DIPLOMAT</h3><p>An in-progress contract-validation layer exploring how machine-checkable rules can validate AI-agent outputs in an insurance claim-processing workflow.</p><div class="tag-list"><span>Python</span><span>FastAPI</span><span>Pydantic</span><span>TypeScript</span></div><div class="project-foot"><a href="https://github.com/KEERTHIVASAN-SKV/DIPLOMAT" target="_blank" rel="noreferrer">View repository ↗</a><span class="status-pill">IN PROGRESS</span></div></div>
+        </article>
+      </div>
+      <div class="work-note"><span class="note-mark">✳</span><p>Some projects are works in progress. I aim to represent implementation scope honestly and keep improving them as I learn.</p></div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills reveal-section" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skills-column reveal-item">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>C</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML/CSS/JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>SQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="skills-section section shell reveal" id="skills">
+      <div class="section-top"><span class="section-index">03 / TOOLKIT</span><span class="section-rule"></span><span class="section-note">TOOLS I WORK WITH</span></div>
+      <div class="section-heading-row"><h2>My current<br /><span class="muted">toolkit.</span></h2><p>A growing set of technologies I use across coursework, projects and hands-on development.</p></div>
+      <div class="skills-layout">
+        <div class="skill-group"><div class="skill-group-head"><span>01</span><h3>Languages</h3></div><div class="skill-chips"><span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>C</span><span>SQL</span></div></div>
+        <div class="skill-group"><div class="skill-group-head"><span>02</span><h3>Frontend</h3></div><div class="skill-chips"><span>React.js</span><span>HTML5</span><span>CSS3</span><span>React Native</span><span>Flutter</span></div></div>
+        <div class="skill-group"><div class="skill-group-head"><span>03</span><h3>Backend & Data</h3></div><div class="skill-chips"><span>Node.js</span><span>Express.js</span><span>Django</span><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Supabase</span></div></div>
+        <div class="skill-group"><div class="skill-group-head"><span>04</span><h3>Tools & Interests</h3></div><div class="skill-chips"><span>Git & GitHub</span><span>REST APIs</span><span>Figma</span><span>Photoshop</span><span>UI/UX</span><span>AI Integration</span></div></div>
+      </div>
+      <p class="skills-footnote">Technologies reflect hands-on exposure across projects and learning; depth varies by tool.</p>
     </section>
 
-    <!-- Experience Section -->
-    <section class="experience reveal-section" id="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-content">
-                <div class="experience-card reveal-item">
-                    <div class="experience-image">
-                        <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Web Development" />
-                    </div>
-                    <div class="experience-details">
-                        <h3>Software Development Intern</h3>
-                        <h4>Bluestock Fintech</h4>
-                        <div class="internship-duration">
-                            <span class="duration-badge">Duration: 2 Months</span>
-                        </div>
-                        <div class="internship-details">
-                            <h5>Key Responsibilities & Achievements:</h5>
-                            <ul class="internship-list">
-                                <li><strong>Full-Stack Development:</strong> Developed and maintained web applications using modern technologies including React.js, Node.js, and Postgresql</li>
-                                <li><strong>API Integration:</strong> Implemented RESTful APIs and integrated third-party financial services for real-time data processing</li>
-                                <li><strong>Database Management:</strong> Designed and optimized database schemas</li>
-                                <li><strong>UI/UX Implementation:</strong> Created responsive user interfaces with focus on user experience and accessibility standards</li>
-                                <li><strong>Testing & Debugging:</strong> Conducted comprehensive testing and debugging to ensure application reliability and performance</li>
-                                <li><strong>Agile Development:</strong> Participated in daily standups, sprint planning, and code reviews following Agile methodologies</li>
-                                <li><strong>Financial Technology:</strong> Gained expertise in fintech domain including payment processing, financial data analysis, and compliance requirements</li>
-                            </ul>
-                            <div class="technologies-used">
-                                <h5>Technologies Used:</h5>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">React.js</span>
-                                    <span class="tech-tag">Node.js</span>
-                                    <span class="tech-tag">Postgresql</span>
-
-                                    <span class="tech-tag">Express.js</span>
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">HTML/CSS</span>
-                                    <span class="tech-tag">Git</span>
-                                    <span class="tech-tag">REST APIs</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="experience-card reveal-item">
-                    <div class="experience-image">
-                        <img src="https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="BSNL Internship" />
-                    </div>
-                    <div class="experience-details">
-                        <h3>Telecommunications Intern</h3>
-                        <h4>Rajiv Gandhi Memorial Telecom Training Center, Meenambakkam (BSNL)</h4>
-                        <div class="internship-duration">
-                            <span class="duration-badge">Duration: 1 Week</span>
-                        </div>
-                        <p>Completed intensive training program on telecommunications infrastructure and network management. Gained hands-on experience in telecommunications systems, network operations, and technical troubleshooting procedures.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="experience-section section shell reveal" id="experience">
+      <div class="section-top"><span class="section-index">04 / EXPERIENCE</span><span class="section-rule"></span><span class="section-note">LEARNING BY DOING</span></div>
+      <div class="section-heading-row"><h2>Experience<br /><span class="muted">in practice.</span></h2><p>Working on real product requirements and learning how software comes together beyond the classroom.</p></div>
+      <div class="timeline">
+        <article class="timeline-entry"><div class="timeline-date">JUN — JUL 2025 <span>· 2 MONTHS</span></div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-company">BLUESTOCK FINTECH <span>INTERNSHIP</span></div><h3>Software Development Intern</h3><p>Worked on an IPO tracking and stock-market information platform, taking responsibility for building application features and integrating APIs. The work included public IPO listing views, RHP/DRHP document access and an admin-side Manage IPO interface.</p><div class="tag-list"><span>React.js</span><span>React Router</span><span>JavaScript</span><span>REST API Integration</span><span>HTML / CSS</span></div></div></article>
+        <article class="timeline-entry"><div class="timeline-date">TRAINING <span>· 1 WEEK</span></div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-company">BSNL · RAJIV GANDHI MEMORIAL TELECOM TRAINING CENTER</div><h3>Telecommunications Trainee</h3><p>Completed a short training programme covering telecommunications infrastructure, network operations and technical troubleshooting fundamentals.</p><div class="tag-list"><span>Telecommunications</span><span>Networking Fundamentals</span></div></div></article>
+      </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section class="certificates reveal-section" id="certificates">
-        <div class="container">
-            <h2 class="section-title">Certificates</h2>
-            <div class="certificate-grid">
-                <div class="certificate-card reveal-item">
-                    <div class="certificate-image">
-                        <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="MATLAB Certificate" />
-                    </div>
-                    <div class="certificate-content">
-                        <h3>MATLAB Onramp</h3>
-                        <p>Completed comprehensive MATLAB training covering fundamental programming concepts and data analysis techniques.</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card reveal-item">
-                    <div class="certificate-image">
-                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Python Statistics Certificate" />
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Statistics Essentials with Python</h3>
-                        <p>Mastered statistical analysis and data science fundamentals using Python programming language.</p>
-                    </div>
-                </div>
-
-                <div class="certificate-card reveal-item">
-                    <div class="certificate-image">
-                        <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="CSS3 Certificate" />
-                    </div>
-                    <div class="certificate-content">
-                        <h3>CSS3</h3>
-                        <p>Advanced CSS3 certification covering modern web styling techniques and responsive design principles.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="education-section section shell reveal" id="education">
+      <div class="section-top"><span class="section-index">05 / EDUCATION & LEARNING</span><span class="section-rule"></span><span class="section-note">FOUNDATIONS</span></div>
+      <div class="education-grid">
+        <div><h2>Built on<br /><span class="muted">strong foundations.</span></h2><div class="education-card"><span class="education-year">2023 — 2027</span><h3>B.Tech, Information Technology</h3><p>Loyola ICAM College of Engineering and Technology (LICET), Chennai</p><span class="education-status">UNDERGRADUATE</span></div></div>
+        <div class="cert-panel"><span class="mini-label">CONTINUOUS LEARNING</span><h3>Certifications</h3><ul><li><span>MATLAB Onramp</span><span>↗</span></li><li><span>Statistics Essentials with Python</span><span>↗</span></li><li><span>CSS3</span><span>↗</span></li></ul><p>Additional certifications and credentials can be added as verified links become available.</p></div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact reveal-section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-info">
-                <div class="contact-item reveal-item">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>keerthivasan.skv1506@gmail.com </p>
-                    <a href="mailto:keerthivasan.skv1506@gmail.com" class="contact-link">Send Email</a>
-                </div>
-                <div class="contact-item reveal-item">
-                    <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
-                    <p>7810003524</p>
-                    <a href="tel:7810003524" class="contact-link">Call Now</a>
-                </div>
-                <div class="contact-item reveal-item">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me professionally</p>
-                    <a href="https://www.linkedin.com/in/keerthivasan-sk" target="_blank" class="contact-link">View Profile</a>
-                </div>
-                <div class="contact-item reveal-item">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>Check out my projects</p>
-                    <a href="https://github.com/KEERTHIVASAN-SKV" target="_blank" class="contact-link">View Projects</a>
-                </div>
-            </div>
-        </div>
+    <section class="contact-section section shell reveal" id="contact">
+      <div class="contact-panel"><div class="section-top"><span class="section-index">06 / CONTACT</span><span class="section-rule"></span><span class="section-note">HAVE A PROJECT IN MIND?</span></div><div class="contact-grid"><div><p class="eyebrow">LET'S BUILD SOMETHING USEFUL</p><h2>Have a good<br /><span class="gradient-text">idea?</span> Let's talk.</h2></div><div class="contact-copy"><p>I'm interested in software engineering opportunities, collaborative projects and conversations around building useful technology.</p><a class="contact-email" href="mailto:keerthivasan.skv1506@gmail.com">keerthivasan.skv1506@gmail.com <span>↗</span></a><div class="contact-links"><a href="https://github.com/KEERTHIVASAN-SKV" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/keerthivasan-sk" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="tel:7810003524">Phone ↗</a></div></div></div></div>
     </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Keerthivasan S. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Navigation
-        document.querySelector('.menu-btn').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Reveal animations
-        const revealSection = (entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        };
-
-        const sectionObserver = new IntersectionObserver(revealSection, {
-            root: null,
-            threshold: 0.15,
-        });
-
-        document.querySelectorAll('.reveal-section').forEach((section) => {
-            sectionObserver.observe(section);
-        });
-
-        document.querySelectorAll('.reveal-item').forEach((item) => {
-            sectionObserver.observe(item);
-        });
-    </script>
+  </main>
+  <footer class="footer shell"><a class="brand" href="#home"><span class="brand-mark">K<span>.</span></span><span>KEERTHIVASAN</span></a><span>Designed & built with curiosity.</span><span>© <span id="year"></span> Keerthivasan S</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
 </body>
-
 </html>
